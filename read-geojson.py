@@ -1,4 +1,8 @@
+from flask import Flask
 import geopandas as gpd
+
+app = Flask(__name__)
+@app.route('/')
 
 def hello_world():
     print('hello')
